@@ -3,38 +3,11 @@ import { ref, h, getCurrentInstance } from 'vue'
 import { useRoute } from 'vue-router'
 import headCommonVue from './components/common/layout/headCommon.vue';
 import footerCommonVue from './components/common/layout/footerCommon.vue';
-// import { ElMessage } from 'element-plus'
-
-// import en from 'element-plus/dist/locale/en.mjs'
-// import zhCn from 'element-plus/dist/locale/zh-cn.mjs'
-// import { useI18n } from 'vue-i18n'
 import { useStore } from 'vuex'
-
 const store = useStore()
-// const { locale } = useI18n()
-// const lolang = ref(zhCn)
-// const changeLang = (language: any) => {
-//   lolang.value = language
-//   locale.value = language.name
-//   // console.log('切换成功', lolang.value);
-// }
-
 const route = useRoute()
-
-
-// const sss = () => {
-//   console.log(1123);
-
-//   const { porxy }: any = getCurrentInstance()
-//   porxy.$message({
-//     message: h('p', null, [
-//       h('span', null, 'Message can be'),
-//       h('i', { style: 'color:red' }, '1111'),
-//     ])
-//   })
-// }
-
-
+// 第一次进入app
+store.commit('setOrderVisible', false)
 </script>   
 
 <template>
