@@ -1,0 +1,76 @@
+.header-common {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    position: relative;
+    align-items: center;
+
+    .logo {
+        width: auto;
+        height: 50px;
+        // padding: 5px 0 0 20px;
+        position: absolute;
+        top: -10px;
+        left: 15px;
+        z-index: 10;
+        padding: 1.5em;
+        will-change: filter;
+
+        &:hover {
+            filter: drop-shadow(0 0 2em #eb4d4b);
+        }
+    }
+
+    .wenzi {
+        width: auto;
+        height: 45px;
+        // padding: 10px 0 0 10px;
+        position: absolute;
+        top: 15px;
+        left: 145px;
+        z-index: 10;
+        &:hover {
+                filter: drop-shadow(0 0 3em #ff7979);
+            }
+    }
+
+    .el-menu {
+        width: inherit;
+        // padding: 0 25px;
+        justify-content: right;
+        height: 80px;
+
+        // background-color: rgb(255, 255, 255);
+
+        .el-menu-item {
+            height: 80px;
+        }
+
+        .el-menu-demo {
+            .el-menu-item.is-active {
+                border-bottom: 2px solid #15181a;
+                color: rgb(20, 18, 18);
+            }
+        }
+
+        .el-sub-menu__title {
+            font-size: 26px;
+        }
+    }
+
+    .avatar {
+        width: 50px;
+        height: 50px;
+        box-shadow: rgb(235, 235, 235) 0 0 0 2px;
+        border-radius: 50%;
+    }
+}
+
+// 二级菜单hover状态下字体颜色
+.el-menu--horizontal .el-menu-item:not(.is-disabled):focus,
+.el-menu--horizontal .el-menu-item:not(.is-disabled):hover {
+    color: #fcf8f8 !important;
+    background-color: #ff7979b3;
+}
+

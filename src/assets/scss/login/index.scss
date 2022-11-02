@@ -1,0 +1,90 @@
+.login-page {
+    margin: 0;
+    padding: 0;
+    @include flex-layout(row, center, center);
+    height: 100vh;
+    // background-color: #eda5a5;
+
+    .left-part {
+        flex: 35;
+        height: 100%;
+        overflow: hidden;
+
+        img {
+            height: 100%;
+            width: auto;
+        }
+    }
+}
+
+.right-part {
+    flex: 20;
+    @include flex-layout(row, center, center);
+
+    .login-panel {
+        width: 300px;
+
+        .titlelogo {
+            padding-bottom: 30px;
+
+            // background-color: rgb(176, 136, 136);
+            img {
+                padding: 30px;
+                width: 240px;
+                // height: 300px;
+            }
+
+            &:hover {
+                cursor: pointer;
+                filter: drop-shadow(0 0 3em #eb4e4b70);
+            }
+        }
+
+
+        .demo-tabs {
+            @include flex-layout;
+
+            .el-tabs__item {
+
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+
+            .el-tabs__item:hover {
+                color: #ff7979;
+            }
+
+            .el-tabs__item.is-active {
+                color: #ff7979;
+            }
+
+            .el-tabs__active-bar {
+                background-color: #eb4d4b;
+            }
+        }
+
+        // 表单
+        .el-form {
+            .el-input {
+                margin: 5px 0px;
+                --el-input-focus-border-color: #ff7979;
+                height: 40px;
+            }
+
+            .el-form-item {
+                border-bottom: #ff7979;
+            }
+
+            .el-button {
+                margin-top: 5px;
+                width: 350px;
+                height: 40px;
+                font-size: large;
+                color: white;
+                background-color: #ff7979;
+                border-radius: 20px;
+                --el-button-active-border-color: #eb4d4b
+            }
+        }
+    }
+}

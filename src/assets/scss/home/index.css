@@ -1,0 +1,14 @@
+.home-page .banner {
+  height: 530px;
+  width: 100%;
+  background-color: #d59b9b;
+}
+
+.home-page .banner .title {
+  font-size: 22px;
+}
+
+.home-page .banner .sub-title {
+  font-size: 16px;
+  margin: 5px 0 25px 0;
+}

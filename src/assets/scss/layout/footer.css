@@ -1,0 +1,23 @@
+.footer-common {
+  border-top: 1px solid #e1dcdc;
+}
+
+@in ul {
+  .footer-common {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer-common li {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-common li a {
+    color: #51c79a;
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+  .footer-common li a:hover {
+    color: #6590d4;
+  }
+}

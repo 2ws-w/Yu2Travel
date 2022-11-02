@@ -1,0 +1,30 @@
+$red: rgb(150, 97, 97);
+
+
+@mixin line-text-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+// 主体样式
+@mixin main-wapper($mar:0px) {
+    width: 1048px;
+    margin: $mar auto;
+}
+
+// flex布局
+@mixin flex-layout($direction: column, $justify: center, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+// 多行省略
+@mixin text-overflow($line: 1) {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $line;
+    overflow: hidden;
+}

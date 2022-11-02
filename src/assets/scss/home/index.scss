@@ -1,0 +1,63 @@
+.home-page {
+    .banner {
+        height: 550px;
+        width: 100%;
+        // background-image: url(../../images/login/bgc-login.png);
+        // background-color: rgb(240, 184, 184);
+        img {
+            height: 550px;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .title {
+        font-size: 24px;
+        margin-left: 8px;
+        margin-top: 40px;
+    }
+
+    .sub-title {
+        font-size: 18px;
+        margin:10px 0 25px 8px;
+    }
+
+    .main-wapper {
+        @include main-wapper();
+    }
+
+    .home-list {
+        @include flex-layout(row, flex-start, center);
+        flex-wrap: wrap;
+        margin-right: 0px;
+
+        .item {
+            width: 333px;
+            overflow: hidden;
+            display: inline-block;
+            margin: 0 8px 25px 8px;
+            cursor: pointer;
+        }
+
+        img {
+            width: 333px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        .title {
+            width: 333px;
+            font-size: 18px;
+            margin: 15px 0px;
+            font-weight: bold;
+            text-align: left;
+            @include text-overflow(1)
+        }
+
+        .price {
+            font-size: 16px;
+            text-align: left;
+        }
+    }
+}
